@@ -1,0 +1,75 @@
+.booklet {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    display: none;
+    flex-direction: column;
+}
+
+.card.active-card {
+    display: flex;
+}
+
+.card-header {
+    background-color: #F9A825;
+    border-radius: 10px 10px 0 0;
+    padding: 20px;
+}
+
+.card-header h2 {
+    margin: 0;
+    color: #fff;
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-body p {
+    font-size: 18px;
+    margin: 0 0 20px;
+}
+
+.card-body input[type="text"] {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    font-size: 16px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.card-body input[type="text"]:focus {
+    outline: none;
+    border-bottom: 2px solid #F9A825;
+}
+
+
+.next-btn {
+    background-color: #F9A825;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.next-btn:hover {
+    background-color: #E65100;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
